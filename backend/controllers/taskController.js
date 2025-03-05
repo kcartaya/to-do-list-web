@@ -9,6 +9,7 @@ exports.addTask = async (req, res) => {
   const newTask = new Task(req.body);
   await newTask.save();
   res.json(newTask);
+  //agregar tarea
 };
 
 exports.updateTask = async (req, res) => {
